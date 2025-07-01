@@ -53,6 +53,7 @@ main {
   background: gray;
   grid-column: 1 / 2;
   padding: 2rem;
+  
 }
 
 .aside-content {
