@@ -1,0 +1,132 @@
+
+h1, h2, span {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+body {
+    font-size: 1.2rem;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#course-title {
+    display: block;
+    font-size: 2rem;
+    text-align: center;
+    padding: 1.5rem;
+    background-color: beige;
+}
+
+nav {
+	background-color: #36454f;
+	margin: 0 auto;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    flex: 1 1 auto;
+}
+
+nav a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+}
+
+nav a:hover {
+	text-decoration: overline;
+}
+
+.active {
+	color: yellow;
+}
+
+main {
+    max-width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto 300px;
+}
+.card {
+    border: 1px solid #ccc;
+    border-radius: 1.5rem;
+    margin: 16px;
+    overflow: hidden;
+}
+
+.card-title {
+    background-color: beige;
+    padding: 0.5rem;
+}
+.me {
+    margin: 1.5rem;
+}
+
+.me img {
+    float: right;
+    width: 150px;
+    margin-left: 1.5rem;
+}
+
+.line {
+    max-width: 60%;
+    margin: 0.5rem auto;
+}
+
+.flag {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin: 1.5rem;
+}
+.flag figure {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.flag img {
+    width: 150px;
+    height: auto;
+    display: block;
+}
+
+.flag figcaption {
+    font-size: 0.85rem;
+    margin-top: 4px;
+    text-align: center;
+}
+.flag p {
+    flex: 1;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 16px;  
+    min-height: 300px;   
+}
+.card ul li {
+    text-align: left;             
+    list-style-position: inside; 
+    line-height: 1.5;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: beige;
+}
