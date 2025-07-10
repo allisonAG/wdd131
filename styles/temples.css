@@ -80,3 +80,20 @@ main {
     max-width: 800px;
     margin: 0 auto;
 }
+
+.img-container {
+    display: grid;
+    grid-template-columns: 1 fr;
+    place-items: center;
+    padding: 16px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    margin: .5rem;
+}
+
+figcaption {
+    text-align: center;
+}
