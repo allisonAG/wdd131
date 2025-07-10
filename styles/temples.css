@@ -1,0 +1,82 @@
+h1, h2, span {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+h1 {
+    margin: 1.5rem 0;
+    font-size: 1.5rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#temples-title {
+    display: block;
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 1.5rem;
+    background-color: beige;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: beige;
+}
+
+/* Mobile View */
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❌";
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+    background-color: #36454f;
+    color: white;
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.navigation a:hover,
+.navigation a:active {
+    background-color: orange;
+    font-weight: 700;
+    color: #000;
+}
+
+.open a {
+    display: block;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
