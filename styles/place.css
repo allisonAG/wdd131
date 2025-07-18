@@ -1,0 +1,81 @@
+:root {
+    --primary-color: #264653;
+    --secondary-color: #F8F0E3;
+    --accent-color: #e77837;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background-color: var(--secondary-color);
+}
+h1, h2 {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    text-align: center;  
+}
+
+h2 {
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+h1 {
+    font-size: 2rem;
+    padding: 1.5rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-bottom: 17px solid var(--accent-color);
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.weather img {
+    display: block;
+    width: 80px;
+    margin: 0 auto;
+}
+
+.centered-list {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+.centered-list ul {
+    text-align: left;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.centered-list li {
+    display: flex;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    font-family: sans-serif;
+    padding: 0.3rem 0;
+    max-width: 500px;
+}
+
+.centered-list li strong {
+    width: 140px;
+    display: inline-block;
+    text-align: right;
+}
+
