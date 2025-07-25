@@ -1,0 +1,29 @@
+@media screen and (min-width: 37.5em) {
+    
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        flex-direction: row;
+    }
+
+    .navigation li {
+        flex: 1 1 auto;
+    }
+
+    .navigation a {
+        display: block;
+        
+    }
+    #cards {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+    }
+    .temple-card {
+        min-height: 250px;
+    }
+    .temple-card img {
+        height: 200px;
+    }
+}
