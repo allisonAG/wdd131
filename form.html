@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review</title>
+    <meta name="author" content="Allison Aguirre">
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals. Allison Aguirre Form.">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1>Product Review</h1>
+        <form method="get" action="review.html" class="pRw">
+            <fieldset>
+                <label for="product">Product Name</label>
+                <select name="product" id="product" required>
+                    <option value="" disabled selected>Select a Product... </option>
+                </select>
+            </fieldset>
+            <fieldset class="ratingSection">
+                <legend>Overall Rating</legend>
+                <label>&#9734;<input type="radio" id="one" name="rating" required></label>
+                <label>&#9734;&#9734;<input type="radio" id="two" name="rating" required></label>
+                <label>&#9734;&#9734;&#9734;<input type="radio" id="three" name="rating" required></label>
+                <label>&#9734;&#9734;&#9734;&#9734;<input type="radio" id="four" name="rating" required></label>
+                <label>&#9734;&#9734;&#9734;&#9734;&#9734;<input type="radio" id="five" name="rating" required></label>
+            </fieldset>
+            <fieldset>
+                <label>Date of Installation <input type="date" id="installation" name="installDate" required></label>
+                
+                
+                <div>Which features did you find useful in the product? <br> <em class="note">(Check all that apply)</em></div>
+    
+                <label><input type="checkbox" id="durability" name="durability" value="yes">Durability</label>
+                <label><input type="checkbox" id="easeOfUse" name="easeOfUse" value="yes">Ease of Use</label>
+                <label><input type="checkbox" id="performance" name="performance" value="yes">Performance</label>
+                <label><input type="checkbox" id="design" name="design" value="yes">Design</label>
+            </fieldset>
+            <fieldset>
+                <label>Written Review <span class="optional">(Optional)</span> <textarea name="review" id="review"></textarea></label>
+                
+                
+                <label>Your Name <span class="optional">(Optional)</span> <input type="text" id="name" name="name"></label>
+                
+            </fieldset>
+
+            <input type="submit" value="Post Review">   
+        </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Allison Aguirre | Mexico.</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
