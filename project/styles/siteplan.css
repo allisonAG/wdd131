@@ -1,0 +1,15 @@
+h1, h2, h3 {
+    font-family: "Cormorant Garamond", serif;
+    color: #283618;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #FEFAE0;
+    color: #2C2C2C;
+}
+
+img {
+    display: block;
+    margin: 1rem;
+}
