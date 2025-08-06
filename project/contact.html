@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tales & Teacups | Information</title>
+    <meta name="author" content="Allison Aguirre">
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals. Allison Aguirre Book Club Information Page.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/tales-and-teacups.css">
+    <link rel="stylesheet" href="styles/tales-and-teacups-large.css">
+    <script src="scripts/tales-and-teacups.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Tales & Teacups</h1>
+        <button type="button" id="menu" aria-label="Open menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="books.html" title="Books">Books</a></li>
+                <li><a href="#" title="Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Join The Club!</h2>
+        <form method="get" action="thanks.html" class="mform">
+            <fieldset>
+                <legend>Member Information</legend>
+                <label>First Name* <input type="text" name="fname" required></label>
+                <label>Last Name* <input type="text" name="lname" required></label>
+                <label>Phone <input type="tel" name="phone" placeholder="12145554345"></label>
+                <label>Email <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Reading Preferences</legend>
+                <label><input type="checkbox" name="genre" value="fiction">Fiction</label>
+                <label><input type="checkbox" name="genre" value="non-fiction">Non-fiction</label>
+                <label><input type="checkbox" name="genre" value="fantasy">Fantasy</label>
+                <label><input type="checkbox" name="genre" value="mystery">Mystery</label>
+                <label><input type="checkbox" name="genre" value="historical">Historical</label>
+                <label><input type="checkbox" name="genre" value="romance">Romance</label>
+                <label><input type="checkbox" name="genre" value="other">Other</label>
+            </fieldset>
+            <fieldset>
+                <label>City<input type="text" name="city" placeholder="Mexico City, Toluca, etc."></label>
+                <label>Why do you want to join the club?
+                    <textarea name="motivation" id="motivation" placeholder="I love books and I want to meet new people..."></textarea></label>
+            </fieldset>
+            <input type="submit" value="Join The Club">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Allison Aguirre | Mexico.</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

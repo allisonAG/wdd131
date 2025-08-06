@@ -1,0 +1,64 @@
+@media screen and (min-width: 37.5em) {
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        flex-direction: row;
+    }
+
+    .navigation li {
+        flex: 1 1 auto;
+    }
+
+    .navigation a {
+        display: block;
+    }
+
+    /*Hero Section */
+
+    .hero {
+        position: relative;
+    }
+
+    .welcome {
+        position: absolute;
+        z-index: 10;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(255, 255, 255, 0.808);
+        border-radius: 8px;
+        top: 50%;
+        padding: 2.5rem;
+    }
+
+    .welcome h2 {
+        margin-top: 0;
+    }
+
+    .img-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .book {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        text-align: left;
+        margin: 1rem auto;
+        width: 600px;
+    }
+
+    .book-img {
+        width: 150px; 
+        flex-shrink: 0;
+    }
+
+    .book-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+        
+}

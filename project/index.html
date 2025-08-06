@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tales & Teacups | Home</title>
+    <meta name="author" content="Allison Aguirre">
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals. Allison Aguirre Book Club Home Page.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/tales-and-teacups.css">
+    <link rel="stylesheet" href="styles/tales-and-teacups-large.css">
+    <script src="scripts/tales-and-teacups.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Tales & Teacups</h1>
+        <button type="button" id="menu" aria-label="Open menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" title="Home">Home</a></li>
+                <li><a href="books.html" title="Books">Books</a></li>
+                <li><a href="contact.html" title="Contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/hero-medium.webp" media="(min-width: 500px)">
+                <img src="images/hero-small.webp" alt="Book Club" width="500" height="250">
+            </picture>
+        </div>
+    </header>
+    <main>
+        <section class="welcome">
+            <h2>Welcome to Tales & Teacups!</h2>
+            <p>A cozy club where stories and tea connect us.</p>
+            <a href="contact.html" class="join-button">Join the Club</a>
+        </section>
+        <section class="about">
+            <h2>What is Tales & Teacups?</h2>
+            <p>Tales and Teacups is a monthly reading club designed for book lovers who enjoy sharing stories, ideas, and a warm cup of
+            tea. Each month, members can choose from a curated list of book selections, read the book of the month, and join a cozy
+            gathering to discuss the story, explore different perspectives, and connect with fellow readers. <br>
+            
+            It’s more than just reading — it’s about building community, enjoying meaningful conversations, and making new friends
+            through a shared love of books and tea. Whether you're a lifelong reader or just getting started, you're welcome here.</p>
+        </section>
+        <section>
+            <h2>Currently Reading</h2>
+            <div class="book">
+                <img class="book-img" src="images/1984.webp" alt="1984 by George Orwell">
+                <div class="book-info">
+                    <p>"1984" by George Orwell</p>
+                    <p class="synopsis">In a totalitarian world ruled by Big Brother, Winston Smith dares to question the regime’s control
+                        over truth, freedom,
+                        and identity. As he seeks love and rebellion in a society built on surveillance and fear, he discovers the
+                        terrifying
+                        cost of thinking for yourself.</p>
+                </div> 
+            </div>  
+            <a href="information.html">See full book list</a>
+        </section>
+        <section>
+            <h2>Tea Time Together</h2>
+            <p>A few glimpses of the cozy moments we've shared — warm tea, thoughtful conversations, and lots of laughter.</p>
+            <div class="img-container">
+                <picture>
+                    <img src="images/club-members.webp" alt="Club members meeting">
+                </picture>
+                <picture>
+                    <img src="images/club-members2.webp" alt="Club members meeting">
+                </picture>
+                <picture>
+                    <img src="images/club-members3.webp" alt="Club members meeting">
+                </picture>
+            </div>
+        </section>
+        <section>
+            <h2>Next Meeting</h2>
+            <ul>
+                <li><strong>Date:</strong> Saturday, August 30, 2025</li>
+                <li><strong>Time:</strong> 12:00 PM</li>
+                <li><strong>Location:</strong> Hemiciclo Juventino Rosas, Bosque de Chapultepec I Secc.</li>
+                <li><strong>Book of the Month:</strong> <em>1984</em> by George Orwell</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Allison Aguirre | Mexico.</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
