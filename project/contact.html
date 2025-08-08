@@ -29,13 +29,13 @@
     </header>
     <main>
         <h2>Join The Club!</h2>
-        <form method="get" action="thanks.html" class="mform">
+        <form method="get" action="welcome.html" class="mform">
             <fieldset>
                 <legend>Member Information</legend>
-                <label>First Name* <input type="text" name="fname" required></label>
+                <label>First Name* <input type="text" name="fname" id="name"></label>
                 <label>Last Name* <input type="text" name="lname" required></label>
-                <label>Phone <input type="tel" name="phone" placeholder="12145554345"></label>
-                <label>Email <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                <label>Phone <span class="label">(Optional)</span><input type="tel" name="phone" placeholder="12145554345"></label>
+                <label>Email* <input type="email" name="email" id="email" placeholder="someone@gmail.com" required></label>
             </fieldset>
             <fieldset>
                 <legend>Reading Preferences</legend>
@@ -48,7 +48,7 @@
                 <label><input type="checkbox" name="genre" value="other">Other</label>
             </fieldset>
             <fieldset>
-                <label>City<input type="text" name="city" placeholder="Mexico City, Toluca, etc."></label>
+                <label>City* <input type="text" name="city" placeholder="Mexico City, Toluca, etc." required></label>
                 <label>Why do you want to join the club?
                     <textarea name="motivation" id="motivation" placeholder="I love books and I want to meet new people..."></textarea></label>
             </fieldset>

@@ -60,5 +60,15 @@
         justify-content: center;
         
     }
-        
+    
+    #cards {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .book-card {
+        min-height: 400px;
+    }
+    .book-card img {
+        height: 400px;
+    }
 }

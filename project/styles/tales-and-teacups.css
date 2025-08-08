@@ -153,6 +153,42 @@ ul li {
     display: block;
 }
 
+
+/* Book cards */
+#cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.book-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 300px;
+    padding: 1rem;
+    background-color: #fff;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+}
+
+.book-card img {
+    padding-top: 1.5rem;
+    width: 100%;
+    display: block;
+}
+
+.book-card ul li {
+    margin-bottom: 10px;
+}
+
+.label {
+    color: var(--secondary-color);
+    font-weight: 400;
+}
+
+
 /* Form */
 
 .mform {
@@ -197,4 +233,8 @@ legend {
     border-radius: 6px;
     margin: 1rem 2% 2rem 2%;
     font-weight: 600;
+}
+
+.mform input[type="submit"]:hover {
+    background-color: var(--secondary-color);
 }
